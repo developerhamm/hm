@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <style>
+       body{
+           background-color: white;
+       }
+    table{
+      
+      width: 80%;
+      border: 1px solid black;
+      border-collapse: collapse;
+
+    }
+    thead{
+        background-color: pink;
+        width: 100px;
+
+    }
+    th,td{
+        width: 1000px;
+        
+        border: 1px solid #ccc;
+        padding: 15px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    aside h1 {
+    font-size:1.8em;
+    font-variant: small-caps;
+}
+aside h2 {
+    font-size:1.2em;
+}
+#namecard p {
+    font-size:5px;
+    color:black;
+    /* font-style:italic; */
+}
+       #namecard h1{
+           
+           font-size: 20px;
+           text-align: center;
+           
+       }
+
+.subtitle {
+    font-size:1.5em;
+    /* padding-left:45px; */
+    line-height:0.9em;
+}
+.subtitle::before {
+    content:"";
+    display:block;
+    background:url("../images/note.png") no-repeat;
+    width:24px;
+    height:24px;
+    float:left;
+    margin:0 15px 0 0;
+}
+section > p {
+    font-size:0.9em;
+}
+
+.label {
+    display:inline-block;
+    width:80px;
+    color:purple;
+    font-weight:bold;
+}
+
+meter {
+    width:200px;
+    margin-right:10px;    
+}      
+* {
+    box-sizing: border-box;
+}
+body {
+    background:#222;
+    height:100%;
+    margin:0;
+}
+li,p {
+    line-height: 2.0;
+    font-size:0.9em;
+}
+#container {
+    position:absolute;
+    left:50%;
+    margin-left:-450px;
+    width:900px;
+    height:100%;
+    background:#fff;
+}
+aside {
+    float:left;
+    width:300px;    
+    padding:20px 50px;
+    height:100%;
+    background:rgb(216, 216, 216);
+}
+.pf {
+    border-radius:10%;
+    box-shadow:3px 3px 10px 2px #222;
+
+} 
+#detail {
+    position: relative;
+    top:10px;
+    font-size: 15px;
+}
+#sns
+ {
+    position:relative;
+    top:100px;
+    font-size: 25px; 
+     
+ }
+
+#main {
+    float:right;
+    width:600px;
+    height:100%;
+    padding:20px;
+}
+
+#main > section {
+    width:650px;
+    padding:20px;
+    margin:5px;
+    border-bottom:1px dotted #222;
+}
+
+section > p, section>table {
+    margin-left:35px;
+}
+
+       
+       #audio {
+           
+           position: relative;
+           top: 150px;
+           right: 50px;
+           
+       }       
+   </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인프로필</title>
+</head>
+<body>
+     
+    <div id="container">
+     <!-- 사이드바 -->
+      <aside>
+         <div id="namecard">
+            <p>최신 업데이트(2020.12.21)</p>
+             <img src ="images/profile.jpg" width="200" height="250">
+             <h1>박민정</h1>
+             
+         </div>
+         <div id="detail">
+              <h1>PHONE</h1>
+              <strong>010-5504-1078</strong><br><br><br>
+              <h1>ADDRESS</h1>
+              <p> 서울특별시 영등포구 127-1 801호</p>
+               <h1>E-mail</h1>
+               <p>developer_ham@naver.com</p>
+         </div>
+         <div id="sns">
+             <h2>sns</h2>
+             <a href="https://www.instagram.com/min._.zhen/"><img src="images/instalogo.jpg" width="60" height="50"></a> 
+             <a href="https://blog.naver.com/developer_ham"><img src="images/blog.png" width="60" height="50"></a>
+             <a href="https://github.com/developerhamm"><img src="images/gitlogo.png" width="60" height="50"></a>
+
+    </div>
+
+      
+      <div id="audio">
+            <audio width="400" autoplay controls>
+                <source src="audio/uu.mp3" type="audio/mp3">
+                
+            </audio>
+          
+      </div>
+        
+
+
+
+</aside>
+<div id="main">
+<!--자기소개란-->
+<section>
+<h2 class="subtitle">자기소개</h2>
+<P><mark>안녕하세요 박민정입니다.</mark></P>
+      </section>
+    <!--경력사항-->
+    <section>
+        <h2 class="subtitle">Experience</h2>
+        <ul>
+<li>경력리스트1
+    <ul>                    <!--<ol type=? -->
+        <li>경력사항1</li>
+        <li>경력사항2</li>
+        <li>경력사항3</li>
+    </ul>
+</li>
+<li>경력리스트2
+    <ul>
+      <li>경력사항1</li>
+      <li>경락사항2</li>
+    </ul>
+</li>
+      </ul>
+    </section>
+    <!--숙련도-->
+    <section>
+<h2 class="subtitle">skills</h2>
+    
+    
+    </section>
+
+    <!--학력-->
+        <section>
+        <h2 class="cer">Certificate</h2>
+            <table>
+                <caption>자격증</caption>
+                <thead>
+                    <tr>
+                        <th>자격증명</th>
+                        <th>종류</th>
+                        <th>취득일자</th>
+                        <th>인증번호</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Opic IH</td>
+                    <td>영어</td>
+                    <td> 2020. 04</td>
+                    <td>2A9610910093</td>
+                </tr>
+                <tr>
+                    <td>HSK 6급</td>
+                    <td>중국어</td>
+                    <td>2019. 08</td>
+                    <td>6급</td>
+                </tr>
+              
+                      </tbody>
+            </table>
+
+    </section>
+    <section>
+        <h2 class="edu">Education</h2>
+            <table>
+                <caption>교육사항</caption>
+                <thead>
+                    <tr>
+                        <th>출신학교</th>
+                        <th>전공</th>
+                        <th>재학기간</th>
+                        <th>구분</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>효명고등학교</td>
+                    <td>문과계열</td>
+                    <td>2012.03 ~ 2015.01</td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>세종대학교</td>
+                    <td>한국화전공 <br> 중국통상학 <br>(복수전공) </td>
+                    <td>2015.03 ~ 2020.08</td>
+                    <td>H61912815030164003</td>
+                </tr>
+              
+                      </tbody>
+            </table>
+
+    </section>
+    <!--자격증-->
+    <section>
+        <h2 class="subtitle">lisence</h2>
+       테이블을 만들어 채울 예정
+         
+    </section>
+</div>
+</div>
+</body>
+</html>
